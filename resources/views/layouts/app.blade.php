@@ -1005,6 +1005,31 @@
 
         @yield('content')
     </div>
+
+    {{-- ══════ FOOTER ══════ --}}
+    <footer style="
+        margin-left: 0;
+        border-top: 1px solid rgba(255,255,255,.07);
+        background: rgba(10,10,31,.6);
+        backdrop-filter: blur(10px);
+        padding: .9rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: .5rem;
+    ">
+        <div style="display:flex; align-items:center; gap:.6rem;">
+            <img src="{{ asset('logo.png') }}?v=2" alt="AQUA MAB" style="width:24px;height:24px;object-fit:cover;border-radius:6px;">
+            <span style="color:#475569; font-size:.72rem; font-weight:600;">
+                AQUA MAB &mdash; Gestion des équipements incendie
+            </span>
+        </div>
+        <span style="color:#334155; font-size:.7rem;">
+            &copy; {{ date('Y') }} AQUA MAB. Tous droits réservés.
+        </span>
+    </footer>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
